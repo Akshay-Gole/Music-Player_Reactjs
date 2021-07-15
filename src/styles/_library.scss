@@ -1,0 +1,61 @@
+.library-comp {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  box-shadow: 2px 2px 50px gray;
+  overflow: scroll;
+  transform: translateX(-100%);
+  transition: 750ms all ease-out;
+  opacity: 0;
+  h1 {
+    padding: 2rem;
+  }
+}
+
+.libList-comp {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+  cursor: pointer;
+  img {
+    width: 30%;
+  }
+  &:hover {
+    background-color: rgb(232, 247, 250);
+  }
+}
+
+.libList-description {
+  padding-left: 1rem;
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.7rem;
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+
+.select {
+  background-color: rgb(178, 236, 247);
+}
+
+.active-library {
+  transform: translateX(0%);
+  opacity: 1;
+}

@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+h4,
+h3 {
+  font-weight: 400;
+  color: rgb(100, 100, 100);
+}
+
+.App {
+  transition: 750ms all ease-out;
+}
+
+.move-right {
+  margin-left: 30%;
+}
+
+@import "./player";
+@import "./song";
+@import "./library";
+@import "./nav";
